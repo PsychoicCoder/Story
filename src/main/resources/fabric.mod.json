@@ -1,33 +1,34 @@
 {
 	"schemaVersion": 1,
-	"id": "tutorialmod",
+	"id": "story",
 	"version": "${version}",
-	"name": "Tutorial Mod",
-	"description": "This is a Tutorial Mod made by Kaupenjoe :)",
+	"name": "Story",
+	"description": "",
 	"authors": [
-		"Kaupenjoe!"
+		"PsychoicCoder"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/tutorialmod/icon.png",
+	"icon": "assets/story/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.kaupenjoe.tutorialmod.TutorialMod"
+			"io.bliftox.story.Story"
 		],
 		"client": [
-			"net.kaupenjoe.tutorialmod.TutorialModClient"
+			"io.bliftox.story.StoryClient"
 		],
 		"fabric-datagen": [
-			"net.kaupenjoe.tutorialmod.TutorialModDataGenerator"
+			"io.bliftox.story.StoryDataGenerator"
 		]
 	},
 	"mixins": [
-		"tutorialmod.mixins.json"
+		"story.mixins.json"
 	],
+
 	"depends": {
 		"fabricloader": ">=0.14.21",
 		"minecraft": "~1.20.1",
